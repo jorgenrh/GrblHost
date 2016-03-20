@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		372AF84716130F9900EB2B46 /* GHCommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372AF84516130F9900EB2B46 /* GHCommandViewController.m */; };
+		372AF84816130F9900EB2B46 /* GHCommandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372AF84616130F9900EB2B46 /* GHCommandViewController.xib */; };
+		372AF84D1613100A00EB2B46 /* GHFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372AF84B1613100A00EB2B46 /* GHFileViewController.m */; };
+		372AF84E1613100A00EB2B46 /* GHFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372AF84C1613100A00EB2B46 /* GHFileViewController.xib */; };
+		372AF85C1613142800EB2B46 /* GHControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372AF85A1613142800EB2B46 /* GHControlsViewController.m */; };
+		372AF85D1613142800EB2B46 /* GHControlsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372AF85B1613142800EB2B46 /* GHControlsViewController.xib */; };
+		372AF8611613168900EB2B46 /* GHGCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 372AF8601613168900EB2B46 /* GHGCodeView.m */; };
+		372AF86316131B5D00EB2B46 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 372AF86216131B5D00EB2B46 /* settings.png */; };
+		372AF86516131BA100EB2B46 /* preferences.png in Resources */ = {isa = PBXBuildFile; fileRef = 372AF86416131BA100EB2B46 /* preferences.png */; };
+		372AF86F1613206E00EB2B46 /* arrow-3-down-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 372AF8671613206E00EB2B46 /* arrow-3-down-left.png */; };
+		372AF8701613206E00EB2B46 /* arrow-3-down-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 372AF8681613206E00EB2B46 /* arrow-3-down-right.png */; };
+		372AF8711613206E00EB2B46 /* arrow-3-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 372AF8691613206E00EB2B46 /* arrow-3-down.png */; };
+		372AF8721613206E00EB2B46 /* arrow-3-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 372AF86A1613206E00EB2B46 /* arrow-3-left.png */; };
+		372AF8731613206E00EB2B46 /* arrow-3-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 372AF86B1613206E00EB2B46 /* arrow-3-right.png */; };
+		372AF8741613206E00EB2B46 /* arrow-3-up-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 372AF86C1613206E00EB2B46 /* arrow-3-up-left.png */; };
+		372AF8751613206E00EB2B46 /* arrow-3-up-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 372AF86D1613206E00EB2B46 /* arrow-3-up-right.png */; };
+		372AF8761613206E00EB2B46 /* arrow-3-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 372AF86E1613206E00EB2B46 /* arrow-3-up.png */; };
+		372AF879161366A100EB2B46 /* GHDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 372AF878161366A100EB2B46 /* GHDefaults.plist */; };
+		373757F0161E256A00AEAC49 /* connect-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 373757EF161E256A00AEAC49 /* connect-alt.png */; };
+		37583FFB16065B47005BD6CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37583FFA16065B47005BD6CD /* Cocoa.framework */; };
+		3758400516065B47005BD6CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3758400316065B47005BD6CD /* InfoPlist.strings */; };
+		3758400716065B47005BD6CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758400616065B47005BD6CD /* main.m */; };
+		3758400B16065B47005BD6CD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3758400916065B47005BD6CD /* Credits.rtf */; };
+		3758400E16065B47005BD6CD /* GHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758400D16065B47005BD6CD /* GHAppDelegate.m */; };
+		3758401116065B47005BD6CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3758400F16065B47005BD6CD /* MainMenu.xib */; };
+		3758404E16066CB8005BD6CD /* AMSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758404316066CB8005BD6CD /* AMSerialPort.m */; };
+		3758405016066CB8005BD6CD /* AMSerialPortAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758404716066CB8005BD6CD /* AMSerialPortAdditions.m */; };
+		3758405116066CB8005BD6CD /* AMSerialPortList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758404916066CB8005BD6CD /* AMSerialPortList.m */; };
+		3758405316066CB8005BD6CD /* AMStandardEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758404D16066CB8005BD6CD /* AMStandardEnumerator.m */; };
+		375840551606718D005BD6CD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375840541606718D005BD6CD /* IOKit.framework */; };
+		3762AC4D16120B5600F55D79 /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = 3762AC4B16120B5600F55D79 /* connect.png */; };
+		3762AC4E16120B5600F55D79 /* disconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = 3762AC4C16120B5600F55D79 /* disconnect.png */; };
+		3762AC5516120E7500F55D79 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3762AC5416120E7500F55D79 /* stop.png */; };
+		37A37248161CEAEB00598392 /* grblhost.icns in Resources */ = {isa = PBXBuildFile; fileRef = 37A37247161CEAEB00598392 /* grblhost.icns */; };
+		37A3724A161DAE5200598392 /* connect_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 37A37249161DAE5200598392 /* connect_icon.png */; };
+		37A3724C161DAEF200598392 /* connect_icon_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 37A3724B161DAEF200598392 /* connect_icon_black.png */; };
+		37BF17581617091A00F1151A /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37BF17551617091A00F1151A /* MASPreferencesWindow.xib */; };
+		37BF17591617091A00F1151A /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BF17571617091A00F1151A /* MASPreferencesWindowController.m */; };
+		37BF175D1617096A00F1151A /* GHGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BF175B1617096A00F1151A /* GHGeneralPreferencesViewController.m */; };
+		37BF175E1617096A00F1151A /* GHGeneralPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37BF175C1617096A00F1151A /* GHGeneralPreferencesView.xib */; };
+		37BF176216170D3700F1151A /* GHGrblPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BF176016170D3700F1151A /* GHGrblPreferencesViewController.m */; };
+		37BF176316170D3700F1151A /* GHGrblPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37BF176116170D3700F1151A /* GHGrblPreferencesView.xib */; };
+		37BF177316179F5200F1151A /* GHGrblSettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BF177116179F5200F1151A /* GHGrblSettingsWindowController.m */; };
+		37BF177416179F5200F1151A /* GHGrblSettingsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37BF177216179F5200F1151A /* GHGrblSettingsWindowController.xib */; };
+		37DC530D161487EC00D473CC /* GHGrbl.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DC530C161487EC00D473CC /* GHGrbl.m */; };
+		37DC534116148B0100D473CC /* GHSerial.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DC534016148B0100D473CC /* GHSerial.m */; };
+		37DC534B1614CDF000D473CC /* GHFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DC534A1614CDF000D473CC /* GHFile.m */; };
+		37DF646C161240A000199B0F /* GHGCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DF6467161240A000199B0F /* GHGCode.m */; };
+		37DF646D161240A000199B0F /* GHGCodeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DF6469161240A000199B0F /* GHGCodeCommand.m */; };
+		37DF646E161240A000199B0F /* GHGCodeImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DF646B161240A000199B0F /* GHGCodeImport.m */; };
+		37DF6470161247AE00199B0F /* stopicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 37DF646F161247AE00199B0F /* stopicon.png */; };
+		37F236CC1618D8C500B35723 /* GHAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F236CB1618D8C400B35723 /* GHAppController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		372AF84416130F9900EB2B46 /* GHCommandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCommandViewController.h; sourceTree = "<group>"; };
+		372AF84516130F9900EB2B46 /* GHCommandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCommandViewController.m; sourceTree = "<group>"; };
+		372AF84616130F9900EB2B46 /* GHCommandViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHCommandViewController.xib; sourceTree = "<group>"; };
+		372AF84A1613100A00EB2B46 /* GHFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHFileViewController.h; sourceTree = "<group>"; };
+		372AF84B1613100A00EB2B46 /* GHFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHFileViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
+		372AF84C1613100A00EB2B46 /* GHFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHFileViewController.xib; sourceTree = "<group>"; };
+		372AF8591613142800EB2B46 /* GHControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHControlsViewController.h; sourceTree = "<group>"; };
+		372AF85A1613142800EB2B46 /* GHControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHControlsViewController.m; sourceTree = "<group>"; };
+		372AF85B1613142800EB2B46 /* GHControlsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHControlsViewController.xib; sourceTree = "<group>"; };
+		372AF85F1613168900EB2B46 /* GHGCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGCodeView.h; sourceTree = "<group>"; };
+		372AF8601613168900EB2B46 /* GHGCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGCodeView.m; sourceTree = "<group>"; };
+		372AF86216131B5D00EB2B46 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		372AF86416131BA100EB2B46 /* preferences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preferences.png; sourceTree = "<group>"; };
+		372AF8671613206E00EB2B46 /* arrow-3-down-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-3-down-left.png"; sourceTree = "<group>"; };
+		372AF8681613206E00EB2B46 /* arrow-3-down-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-3-down-right.png"; sourceTree = "<group>"; };
+		372AF8691613206E00EB2B46 /* arrow-3-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-3-down.png"; sourceTree = "<group>"; };
+		372AF86A1613206E00EB2B46 /* arrow-3-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-3-left.png"; sourceTree = "<group>"; };
+		372AF86B1613206E00EB2B46 /* arrow-3-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-3-right.png"; sourceTree = "<group>"; };
+		372AF86C1613206E00EB2B46 /* arrow-3-up-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-3-up-left.png"; sourceTree = "<group>"; };
+		372AF86D1613206E00EB2B46 /* arrow-3-up-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-3-up-right.png"; sourceTree = "<group>"; };
+		372AF86E1613206E00EB2B46 /* arrow-3-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-3-up.png"; sourceTree = "<group>"; };
+		372AF878161366A100EB2B46 /* GHDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GHDefaults.plist; sourceTree = "<group>"; };
+		373757EF161E256A00AEAC49 /* connect-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "connect-alt.png"; sourceTree = "<group>"; };
+		37583FF616065B47005BD6CD /* GrblHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrblHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37583FFA16065B47005BD6CD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		37583FFD16065B47005BD6CD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		37583FFE16065B47005BD6CD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		37583FFF16065B47005BD6CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3758400216065B47005BD6CD /* GrblHost-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GrblHost-Info.plist"; sourceTree = "<group>"; };
+		3758400416065B47005BD6CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3758400616065B47005BD6CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3758400816065B47005BD6CD /* GrblHost-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GrblHost-Prefix.pch"; sourceTree = "<group>"; };
+		3758400A16065B47005BD6CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3758400C16065B47005BD6CD /* GHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHAppDelegate.h; sourceTree = "<group>"; };
+		3758400D16065B47005BD6CD /* GHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAppDelegate.m; sourceTree = "<group>"; };
+		3758401016065B47005BD6CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3758404016066CB8005BD6CD /* AMSDKCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSDKCompatibility.h; sourceTree = "<group>"; };
+		3758404116066CB8005BD6CD /* AMSerialErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialErrors.h; sourceTree = "<group>"; };
+		3758404216066CB8005BD6CD /* AMSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPort.h; sourceTree = "<group>"; };
+		3758404316066CB8005BD6CD /* AMSerialPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPort.m; sourceTree = "<group>"; };
+		3758404616066CB8005BD6CD /* AMSerialPortAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortAdditions.h; sourceTree = "<group>"; };
+		3758404716066CB8005BD6CD /* AMSerialPortAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortAdditions.m; sourceTree = "<group>"; };
+		3758404816066CB8005BD6CD /* AMSerialPortList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortList.h; sourceTree = "<group>"; };
+		3758404916066CB8005BD6CD /* AMSerialPortList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortList.m; sourceTree = "<group>"; };
+		3758404C16066CB8005BD6CD /* AMStandardEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStandardEnumerator.h; sourceTree = "<group>"; };
+		3758404D16066CB8005BD6CD /* AMStandardEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMStandardEnumerator.m; sourceTree = "<group>"; };
+		375840541606718D005BD6CD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		3762AC4B16120B5600F55D79 /* connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect.png; sourceTree = "<group>"; };
+		3762AC4C16120B5600F55D79 /* disconnect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disconnect.png; sourceTree = "<group>"; };
+		3762AC5416120E7500F55D79 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		37A37247161CEAEB00598392 /* grblhost.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = grblhost.icns; path = ../grblhost.icns; sourceTree = "<group>"; };
+		37A37249161DAE5200598392 /* connect_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect_icon.png; sourceTree = "<group>"; };
+		37A3724B161DAEF200598392 /* connect_icon_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect_icon_black.png; sourceTree = "<group>"; };
+		37BF17541617091A00F1151A /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesViewController.h; sourceTree = "<group>"; };
+		37BF17551617091A00F1151A /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASPreferencesWindow.xib; sourceTree = "<group>"; };
+		37BF17561617091A00F1151A /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesWindowController.h; sourceTree = "<group>"; };
+		37BF17571617091A00F1151A /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASPreferencesWindowController.m; sourceTree = "<group>"; };
+		37BF175A1617096A00F1151A /* GHGeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGeneralPreferencesViewController.h; sourceTree = "<group>"; };
+		37BF175B1617096A00F1151A /* GHGeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGeneralPreferencesViewController.m; sourceTree = "<group>"; };
+		37BF175C1617096A00F1151A /* GHGeneralPreferencesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHGeneralPreferencesView.xib; sourceTree = "<group>"; };
+		37BF175F16170D3700F1151A /* GHGrblPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGrblPreferencesViewController.h; sourceTree = "<group>"; };
+		37BF176016170D3700F1151A /* GHGrblPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGrblPreferencesViewController.m; sourceTree = "<group>"; };
+		37BF176116170D3700F1151A /* GHGrblPreferencesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHGrblPreferencesView.xib; sourceTree = "<group>"; };
+		37BF176A161795F700F1151A /* todo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = todo.txt; sourceTree = "<group>"; };
+		37BF177016179F5200F1151A /* GHGrblSettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGrblSettingsWindowController.h; sourceTree = "<group>"; };
+		37BF177116179F5200F1151A /* GHGrblSettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGrblSettingsWindowController.m; sourceTree = "<group>"; };
+		37BF177216179F5200F1151A /* GHGrblSettingsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHGrblSettingsWindowController.xib; sourceTree = "<group>"; };
+		37DC530B161487EC00D473CC /* GHGrbl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGrbl.h; sourceTree = "<group>"; };
+		37DC530C161487EC00D473CC /* GHGrbl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGrbl.m; sourceTree = "<group>"; };
+		37DC533F16148B0100D473CC /* GHSerial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSerial.h; sourceTree = "<group>"; };
+		37DC534016148B0100D473CC /* GHSerial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSerial.m; sourceTree = "<group>"; };
+		37DC53491614CDF000D473CC /* GHFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHFile.h; sourceTree = "<group>"; };
+		37DC534A1614CDF000D473CC /* GHFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHFile.m; sourceTree = "<group>"; };
+		37DF6466161240A000199B0F /* GHGCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGCode.h; sourceTree = "<group>"; };
+		37DF6467161240A000199B0F /* GHGCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGCode.m; sourceTree = "<group>"; };
+		37DF6468161240A000199B0F /* GHGCodeCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGCodeCommand.h; sourceTree = "<group>"; };
+		37DF6469161240A000199B0F /* GHGCodeCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGCodeCommand.m; sourceTree = "<group>"; };
+		37DF646A161240A000199B0F /* GHGCodeImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGCodeImport.h; sourceTree = "<group>"; };
+		37DF646B161240A000199B0F /* GHGCodeImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGCodeImport.m; sourceTree = "<group>"; };
+		37DF646F161247AE00199B0F /* stopicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopicon.png; sourceTree = "<group>"; };
+		37F236C11618439400B35723 /* GHCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHCommon.h; sourceTree = "<group>"; };
+		37F236CA1618D8C300B35723 /* GHAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHAppController.h; sourceTree = "<group>"; };
+		37F236CB1618D8C400B35723 /* GHAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHAppController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37583FF316065B47005BD6CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375840551606718D005BD6CD /* IOKit.framework in Frameworks */,
+				37583FFB16065B47005BD6CD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		372AF8661613201B00EB2B46 /* Arrows */ = {
+			isa = PBXGroup;
+			children = (
+				372AF8671613206E00EB2B46 /* arrow-3-down-left.png */,
+				372AF8681613206E00EB2B46 /* arrow-3-down-right.png */,
+				372AF8691613206E00EB2B46 /* arrow-3-down.png */,
+				372AF86A1613206E00EB2B46 /* arrow-3-left.png */,
+				372AF86B1613206E00EB2B46 /* arrow-3-right.png */,
+				372AF86C1613206E00EB2B46 /* arrow-3-up-left.png */,
+				372AF86D1613206E00EB2B46 /* arrow-3-up-right.png */,
+				372AF86E1613206E00EB2B46 /* arrow-3-up.png */,
+			);
+			name = Arrows;
+			sourceTree = "<group>";
+		};
+		37583FEB16065B47005BD6CD = {
+			isa = PBXGroup;
+			children = (
+				3758400016065B47005BD6CD /* GrblHost */,
+				37583FF916065B47005BD6CD /* Frameworks */,
+				37583FF716065B47005BD6CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37583FF716065B47005BD6CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37583FF616065B47005BD6CD /* GrblHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37583FF916065B47005BD6CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				375840541606718D005BD6CD /* IOKit.framework */,
+				37583FFA16065B47005BD6CD /* Cocoa.framework */,
+				37583FFC16065B47005BD6CD /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37583FFC16065B47005BD6CD /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37583FFD16065B47005BD6CD /* AppKit.framework */,
+				37583FFE16065B47005BD6CD /* CoreData.framework */,
+				37583FFF16065B47005BD6CD /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3758400016065B47005BD6CD /* GrblHost */ = {
+			isa = PBXGroup;
+			children = (
+				3758403F16066CB8005BD6CD /* Serial Port */,
+				37DF64641612407C00199B0F /* GCode */,
+				37EEE0FE16138E5D0030884A /* Grbl Settings */,
+				37BF17511617050700F1151A /* Preferences */,
+				37A3724D161DC4CA00598392 /* Tab Views */,
+				37F236C11618439400B35723 /* GHCommon.h */,
+				3758400C16065B47005BD6CD /* GHAppDelegate.h */,
+				3758400D16065B47005BD6CD /* GHAppDelegate.m */,
+				37F236CA1618D8C300B35723 /* GHAppController.h */,
+				37F236CB1618D8C400B35723 /* GHAppController.m */,
+				37DC533F16148B0100D473CC /* GHSerial.h */,
+				37DC534016148B0100D473CC /* GHSerial.m */,
+				37DC530B161487EC00D473CC /* GHGrbl.h */,
+				37DC530C161487EC00D473CC /* GHGrbl.m */,
+				37DC53491614CDF000D473CC /* GHFile.h */,
+				37DC534A1614CDF000D473CC /* GHFile.m */,
+				372AF85F1613168900EB2B46 /* GHGCodeView.h */,
+				372AF8601613168900EB2B46 /* GHGCodeView.m */,
+				3758400F16065B47005BD6CD /* MainMenu.xib */,
+				3758400116065B47005BD6CD /* Supporting Files */,
+				372AF878161366A100EB2B46 /* GHDefaults.plist */,
+				37BF176A161795F700F1151A /* todo.txt */,
+			);
+			path = GrblHost;
+			sourceTree = "<group>";
+		};
+		3758400116065B47005BD6CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37DF6471161259CE00199B0F /* Icons */,
+				3758400216065B47005BD6CD /* GrblHost-Info.plist */,
+				3758400316065B47005BD6CD /* InfoPlist.strings */,
+				3758400616065B47005BD6CD /* main.m */,
+				3758400816065B47005BD6CD /* GrblHost-Prefix.pch */,
+				3758400916065B47005BD6CD /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3758403F16066CB8005BD6CD /* Serial Port */ = {
+			isa = PBXGroup;
+			children = (
+				3758404016066CB8005BD6CD /* AMSDKCompatibility.h */,
+				3758404116066CB8005BD6CD /* AMSerialErrors.h */,
+				3758404216066CB8005BD6CD /* AMSerialPort.h */,
+				3758404316066CB8005BD6CD /* AMSerialPort.m */,
+				3758404616066CB8005BD6CD /* AMSerialPortAdditions.h */,
+				3758404716066CB8005BD6CD /* AMSerialPortAdditions.m */,
+				3758404816066CB8005BD6CD /* AMSerialPortList.h */,
+				3758404916066CB8005BD6CD /* AMSerialPortList.m */,
+				3758404C16066CB8005BD6CD /* AMStandardEnumerator.h */,
+				3758404D16066CB8005BD6CD /* AMStandardEnumerator.m */,
+			);
+			name = "Serial Port";
+			path = SharedCode;
+			sourceTree = "<group>";
+		};
+		37A3724D161DC4CA00598392 /* Tab Views */ = {
+			isa = PBXGroup;
+			children = (
+				372AF84416130F9900EB2B46 /* GHCommandViewController.h */,
+				372AF84516130F9900EB2B46 /* GHCommandViewController.m */,
+				372AF84616130F9900EB2B46 /* GHCommandViewController.xib */,
+				372AF84A1613100A00EB2B46 /* GHFileViewController.h */,
+				372AF84B1613100A00EB2B46 /* GHFileViewController.m */,
+				372AF84C1613100A00EB2B46 /* GHFileViewController.xib */,
+				372AF8591613142800EB2B46 /* GHControlsViewController.h */,
+				372AF85A1613142800EB2B46 /* GHControlsViewController.m */,
+				372AF85B1613142800EB2B46 /* GHControlsViewController.xib */,
+			);
+			name = "Tab Views";
+			sourceTree = "<group>";
+		};
+		37BF17511617050700F1151A /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				37BF17531617090400F1151A /* MASPreferences */,
+				37BF175A1617096A00F1151A /* GHGeneralPreferencesViewController.h */,
+				37BF175B1617096A00F1151A /* GHGeneralPreferencesViewController.m */,
+				37BF175C1617096A00F1151A /* GHGeneralPreferencesView.xib */,
+				37BF175F16170D3700F1151A /* GHGrblPreferencesViewController.h */,
+				37BF176016170D3700F1151A /* GHGrblPreferencesViewController.m */,
+				37BF176116170D3700F1151A /* GHGrblPreferencesView.xib */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		37BF17531617090400F1151A /* MASPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				37BF17541617091A00F1151A /* MASPreferencesViewController.h */,
+				37BF17551617091A00F1151A /* MASPreferencesWindow.xib */,
+				37BF17561617091A00F1151A /* MASPreferencesWindowController.h */,
+				37BF17571617091A00F1151A /* MASPreferencesWindowController.m */,
+			);
+			name = MASPreferences;
+			sourceTree = "<group>";
+		};
+		37DF64641612407C00199B0F /* GCode */ = {
+			isa = PBXGroup;
+			children = (
+				37DF6466161240A000199B0F /* GHGCode.h */,
+				37DF6467161240A000199B0F /* GHGCode.m */,
+				37DF6468161240A000199B0F /* GHGCodeCommand.h */,
+				37DF6469161240A000199B0F /* GHGCodeCommand.m */,
+				37DF646A161240A000199B0F /* GHGCodeImport.h */,
+				37DF646B161240A000199B0F /* GHGCodeImport.m */,
+			);
+			name = GCode;
+			sourceTree = "<group>";
+		};
+		37DF6471161259CE00199B0F /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				372AF8661613201B00EB2B46 /* Arrows */,
+				373757EF161E256A00AEAC49 /* connect-alt.png */,
+				37A3724B161DAEF200598392 /* connect_icon_black.png */,
+				37A37249161DAE5200598392 /* connect_icon.png */,
+				37A37247161CEAEB00598392 /* grblhost.icns */,
+				372AF86216131B5D00EB2B46 /* settings.png */,
+				372AF86416131BA100EB2B46 /* preferences.png */,
+				3762AC4B16120B5600F55D79 /* connect.png */,
+				3762AC4C16120B5600F55D79 /* disconnect.png */,
+				37DF646F161247AE00199B0F /* stopicon.png */,
+				3762AC5416120E7500F55D79 /* stop.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		37EEE0FE16138E5D0030884A /* Grbl Settings */ = {
+			isa = PBXGroup;
+			children = (
+				37BF177016179F5200F1151A /* GHGrblSettingsWindowController.h */,
+				37BF177116179F5200F1151A /* GHGrblSettingsWindowController.m */,
+				37BF177216179F5200F1151A /* GHGrblSettingsWindowController.xib */,
+			);
+			name = "Grbl Settings";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37583FF516065B47005BD6CD /* GrblHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3758401416065B47005BD6CD /* Build configuration list for PBXNativeTarget "GrblHost" */;
+			buildPhases = (
+				37583FF216065B47005BD6CD /* Sources */,
+				37583FF316065B47005BD6CD /* Frameworks */,
+				37583FF416065B47005BD6CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrblHost;
+			productName = GrblHost;
+			productReference = 37583FF616065B47005BD6CD /* GrblHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37583FED16065B47005BD6CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GH;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = JRH;
+			};
+			buildConfigurationList = 37583FF016065B47005BD6CD /* Build configuration list for PBXProject "GrblHost" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 37583FEB16065B47005BD6CD;
+			productRefGroup = 37583FF716065B47005BD6CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37583FF516065B47005BD6CD /* GrblHost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37583FF416065B47005BD6CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3758400516065B47005BD6CD /* InfoPlist.strings in Resources */,
+				3758400B16065B47005BD6CD /* Credits.rtf in Resources */,
+				3758401116065B47005BD6CD /* MainMenu.xib in Resources */,
+				3762AC4D16120B5600F55D79 /* connect.png in Resources */,
+				3762AC4E16120B5600F55D79 /* disconnect.png in Resources */,
+				3762AC5516120E7500F55D79 /* stop.png in Resources */,
+				37DF6470161247AE00199B0F /* stopicon.png in Resources */,
+				372AF84816130F9900EB2B46 /* GHCommandViewController.xib in Resources */,
+				372AF84E1613100A00EB2B46 /* GHFileViewController.xib in Resources */,
+				372AF85D1613142800EB2B46 /* GHControlsViewController.xib in Resources */,
+				372AF86316131B5D00EB2B46 /* settings.png in Resources */,
+				372AF86516131BA100EB2B46 /* preferences.png in Resources */,
+				372AF86F1613206E00EB2B46 /* arrow-3-down-left.png in Resources */,
+				372AF8701613206E00EB2B46 /* arrow-3-down-right.png in Resources */,
+				372AF8711613206E00EB2B46 /* arrow-3-down.png in Resources */,
+				372AF8721613206E00EB2B46 /* arrow-3-left.png in Resources */,
+				372AF8731613206E00EB2B46 /* arrow-3-right.png in Resources */,
+				372AF8741613206E00EB2B46 /* arrow-3-up-left.png in Resources */,
+				372AF8751613206E00EB2B46 /* arrow-3-up-right.png in Resources */,
+				372AF8761613206E00EB2B46 /* arrow-3-up.png in Resources */,
+				372AF879161366A100EB2B46 /* GHDefaults.plist in Resources */,
+				37BF17581617091A00F1151A /* MASPreferencesWindow.xib in Resources */,
+				37BF175E1617096A00F1151A /* GHGeneralPreferencesView.xib in Resources */,
+				37BF176316170D3700F1151A /* GHGrblPreferencesView.xib in Resources */,
+				37BF177416179F5200F1151A /* GHGrblSettingsWindowController.xib in Resources */,
+				37A37248161CEAEB00598392 /* grblhost.icns in Resources */,
+				37A3724A161DAE5200598392 /* connect_icon.png in Resources */,
+				37A3724C161DAEF200598392 /* connect_icon_black.png in Resources */,
+				373757F0161E256A00AEAC49 /* connect-alt.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37583FF216065B47005BD6CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3758400716065B47005BD6CD /* main.m in Sources */,
+				3758400E16065B47005BD6CD /* GHAppDelegate.m in Sources */,
+				3758404E16066CB8005BD6CD /* AMSerialPort.m in Sources */,
+				3758405016066CB8005BD6CD /* AMSerialPortAdditions.m in Sources */,
+				3758405116066CB8005BD6CD /* AMSerialPortList.m in Sources */,
+				3758405316066CB8005BD6CD /* AMStandardEnumerator.m in Sources */,
+				37DF646C161240A000199B0F /* GHGCode.m in Sources */,
+				37DF646D161240A000199B0F /* GHGCodeCommand.m in Sources */,
+				37DF646E161240A000199B0F /* GHGCodeImport.m in Sources */,
+				372AF84716130F9900EB2B46 /* GHCommandViewController.m in Sources */,
+				372AF84D1613100A00EB2B46 /* GHFileViewController.m in Sources */,
+				372AF85C1613142800EB2B46 /* GHControlsViewController.m in Sources */,
+				372AF8611613168900EB2B46 /* GHGCodeView.m in Sources */,
+				37DC530D161487EC00D473CC /* GHGrbl.m in Sources */,
+				37DC534116148B0100D473CC /* GHSerial.m in Sources */,
+				37DC534B1614CDF000D473CC /* GHFile.m in Sources */,
+				37BF17591617091A00F1151A /* MASPreferencesWindowController.m in Sources */,
+				37BF175D1617096A00F1151A /* GHGeneralPreferencesViewController.m in Sources */,
+				37BF176216170D3700F1151A /* GHGrblPreferencesViewController.m in Sources */,
+				37BF177316179F5200F1151A /* GHGrblSettingsWindowController.m in Sources */,
+				37F236CC1618D8C500B35723 /* GHAppController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3758400316065B47005BD6CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3758400416065B47005BD6CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3758400916065B47005BD6CD /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3758400A16065B47005BD6CD /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3758400F16065B47005BD6CD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3758401016065B47005BD6CD /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3758401216065B47005BD6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3758401316065B47005BD6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3758401516065B47005BD6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GrblHost/GrblHost-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "GrblHost/GrblHost-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3758401616065B47005BD6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GrblHost/GrblHost-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "GrblHost/GrblHost-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37583FF016065B47005BD6CD /* Build configuration list for PBXProject "GrblHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3758401216065B47005BD6CD /* Debug */,
+				3758401316065B47005BD6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3758401416065B47005BD6CD /* Build configuration list for PBXNativeTarget "GrblHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3758401516065B47005BD6CD /* Debug */,
+				3758401616065B47005BD6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37583FED16065B47005BD6CD /* Project object */;
+}
